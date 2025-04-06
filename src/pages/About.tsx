@@ -1,24 +1,20 @@
 import { Link } from "react-router-dom";
+import PageHeader from "../components/shared/PageHeader";
+import SectionHeader from "../components/shared/SectionHeader";
 
 const About = () => {
   return (
     <div>
       {/* Header */}
-      <div className="bg-blue-600 py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto text-center" data-aos="fade-up">
-          <h1 className="text-4xl font-extrabold text-white sm:text-5xl">
-            About AARYA ENTERPRISES
-          </h1>
-          <p className="mt-4 text-xl text-blue-100 max-w-2xl mx-auto">
-            Learn more about our company, our mission, and our team.
-          </p>
-        </div>
-      </div>
+      <PageHeader
+        title="About AARYA ENTERPRISES"
+        subtitle="Learn more about our company, our mission, and our team."
+      />
 
       {/* Company Overview */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div data-aos="fade-up">
+          <div>
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Who We Are
             </h2>
@@ -50,11 +46,11 @@ const About = () => {
               Financial Institutions of India.
             </p>
           </div>
-          <div data-aos="fade-up">
+          <div className="overflow-hidden rounded-lg shadow-xl transition-all duration-300 hover:shadow-2xl">
             <img
               src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
               alt="Our Office"
-              className="rounded-lg shadow-xl"
+              className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
             />
           </div>
         </div>
@@ -63,17 +59,12 @@ const About = () => {
       {/* Mission and Values */}
       <section className="bg-gray-100 py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12" data-aos="fade-up">
-            <h2 className="text-3xl font-bold text-gray-900">
-              Our Vision, Mission and Values
-            </h2>
-            <p className="mt-4 text-xl text-gray-600 max-w-2xl mx-auto">
-              We are guided by a clear mission and strong core values that shape
-              everything we do.
-            </p>
-          </div>
+          <SectionHeader
+            title="Our Vision, Mission and Values"
+            subtitle="We are guided by a clear mission and strong core values that shape everything we do."
+          />
 
-          <div className="mb-16" data-aos="fade-up">
+          <div className="mb-16">
             <h3 className="text-2xl font-semibold text-gray-900 mb-4 text-center">
               Our Vision
             </h3>
@@ -97,7 +88,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="mb-16" data-aos="fade-up">
+          <div className="mb-16">
             <h3 className="text-2xl font-semibold text-gray-900 mb-4 text-center">
               Our Mission
             </h3>
@@ -111,8 +102,8 @@ const About = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow" data-aos="fade-up">
-              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4">
+            <div className="bg-white p-6 rounded-lg shadow transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4 transition-colors duration-300 hover:bg-blue-200">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 text-blue-600"
@@ -137,8 +128,8 @@ const About = () => {
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow" data-aos="fade-up">
-              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4">
+            <div className="bg-white p-6 rounded-lg shadow transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4 transition-colors duration-300 hover:bg-blue-200">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 text-blue-600"
@@ -164,8 +155,8 @@ const About = () => {
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow" data-aos="fade-up">
-              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4">
+            <div className="bg-white p-6 rounded-lg shadow transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4 transition-colors duration-300 hover:bg-blue-200">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 text-blue-600"
@@ -190,8 +181,8 @@ const About = () => {
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow" data-aos="fade-up">
-              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4">
+            <div className="bg-white p-6 rounded-lg shadow transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4 transition-colors duration-300 hover:bg-blue-200">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 text-blue-600"
@@ -218,8 +209,8 @@ const About = () => {
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow" data-aos="fade-up">
-              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4">
+            <div className="bg-white p-6 rounded-lg shadow transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4 transition-colors duration-300 hover:bg-blue-200">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 text-blue-600"
@@ -246,8 +237,8 @@ const About = () => {
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow" data-aos="fade-up">
-              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4">
+            <div className="bg-white p-6 rounded-lg shadow transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4 transition-colors duration-300 hover:bg-blue-200">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 text-blue-600"
@@ -278,7 +269,7 @@ const About = () => {
 
       {/* Leadership Team */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="text-center mb-12" data-aos="fade-up">
+        <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900">Our Founders</h2>
           <p className="mt-4 text-xl text-gray-600 max-w-2xl mx-auto">
             Meet the visionaries behind AARYA ENTERPRISES.
@@ -287,14 +278,11 @@ const About = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mx-auto max-w-2xl">
           {/* Founder 1 */}
-          <div
-            className="bg-white rounded-lg shadow-lg overflow-hidden"
-            data-aos="fade-up"
-          >
+          <div className="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
             <img
               src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
               alt="Pradeep Kumar"
-              className="w-full h-80 object-cover object-center"
+              className="w-full h-80 object-cover object-center transition-transform duration-500 hover:scale-105"
             />
             <div className="p-6">
               <h3 className="text-xl font-semibold text-gray-900 mb-1">
@@ -305,14 +293,11 @@ const About = () => {
           </div>
 
           {/* Founder 2 */}
-          <div
-            className="bg-white rounded-lg shadow-lg overflow-hidden"
-            data-aos="fade-up"
-          >
+          <div className="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
             <img
               src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
               alt="Reena Jaiswar"
-              className="w-full h-80 object-cover object-center"
+              className="w-full h-80 object-cover object-center transition-transform duration-500 hover:scale-105"
             />
             <div className="p-6">
               <h3 className="text-xl font-semibold text-gray-900 mb-1">
@@ -326,7 +311,7 @@ const About = () => {
 
       {/* CTA */}
       <section className="bg-blue-600 text-white py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto text-center" data-aos="fade-up">
+        <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl font-extrabold mb-6">
             Want to join our team?
           </h2>
@@ -337,13 +322,13 @@ const About = () => {
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               to="/career"
-              className="px-8 py-4 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-100"
+              className="px-8 py-4 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-100 transition-all duration-300 hover:shadow-lg transform hover:scale-105"
             >
               View Career Opportunities
             </Link>
             <Link
               to="/contact"
-              className="px-8 py-4 border border-white text-base font-medium rounded-md text-white hover:bg-blue-700"
+              className="px-8 py-4 border border-white text-base font-medium rounded-md text-white hover:bg-blue-700 transition-all duration-300 hover:shadow-lg transform hover:scale-105"
             >
               Contact Us
             </Link>

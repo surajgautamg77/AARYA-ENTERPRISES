@@ -1,19 +1,15 @@
 import { Link } from "react-router-dom";
+import PageHeader from "../components/shared/PageHeader";
+import SectionHeader from "../components/shared/SectionHeader";
 
 const Financial = () => {
   return (
     <div>
       {/* Header */}
-      <div className="bg-blue-600 py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-4xl font-extrabold text-white sm:text-5xl">
-            Financial Services
-          </h1>
-          <p className="mt-4 text-xl text-blue-100 max-w-2xl mx-auto">
-            Comprehensive financial solutions to help your business thrive.
-          </p>
-        </div>
-      </div>
+      <PageHeader
+        title="Financial Services"
+        subtitle="Comprehensive financial solutions to help your business thrive."
+      />
 
       {/* Overview */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
@@ -39,11 +35,11 @@ const Financial = () => {
               expertise to help you succeed.
             </p>
           </div>
-          <div>
+          <div className="overflow-hidden rounded-lg shadow-xl transition-all duration-300 hover:shadow-2xl">
             <img
               src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
               alt="Financial Planning"
-              className="rounded-lg shadow-xl"
+              className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
             />
           </div>
         </div>
@@ -52,19 +48,15 @@ const Financial = () => {
       {/* Financial Services */}
       <section className="bg-gray-100 py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900">
-              Our Financial Services
-            </h2>
-            <p className="mt-4 text-xl text-gray-600 max-w-2xl mx-auto">
-              Comprehensive financial solutions tailored to your business needs.
-            </p>
-          </div>
+          <SectionHeader
+            title="Our Financial Services"
+            subtitle="Comprehensive financial solutions tailored to your business needs."
+          />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Service 1 */}
-            <div className="bg-white p-8 rounded-lg shadow-lg">
-              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-4">
+            <div className="bg-white p-8 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-4 transition-colors duration-300 hover:bg-blue-200">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 text-blue-600"
@@ -88,7 +80,7 @@ const Financial = () => {
                 its short and long-term goals.
               </p>
               <ul className="mb-4 text-gray-600 space-y-2">
-                <li className="flex items-start">
+                <li className="flex items-start transition-all duration-200 hover:translate-x-1">
                   <svg
                     className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
                     fill="none"
@@ -104,7 +96,7 @@ const Financial = () => {
                   </svg>
                   Budget development and forecasting
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start transition-all duration-200 hover:translate-x-1">
                   <svg
                     className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
                     fill="none"
@@ -120,7 +112,7 @@ const Financial = () => {
                   </svg>
                   Cash flow management
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start transition-all duration-200 hover:translate-x-1">
                   <svg
                     className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
                     fill="none"
@@ -140,8 +132,8 @@ const Financial = () => {
             </div>
 
             {/* Service 2 */}
-            <div className="bg-white p-8 rounded-lg shadow-lg">
-              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-4">
+            <div className="bg-white p-8 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-4 transition-colors duration-300 hover:bg-blue-200">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 text-blue-600"
@@ -165,7 +157,7 @@ const Financial = () => {
                 support business growth.
               </p>
               <ul className="mb-4 text-gray-600 space-y-2">
-                <li className="flex items-start">
+                <li className="flex items-start transition-all duration-200 hover:translate-x-1">
                   <svg
                     className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
                     fill="none"
@@ -181,7 +173,7 @@ const Financial = () => {
                   </svg>
                   Investment strategy development
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start transition-all duration-200 hover:translate-x-1">
                   <svg
                     className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
                     fill="none"
@@ -197,7 +189,7 @@ const Financial = () => {
                   </svg>
                   Portfolio management
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start transition-all duration-200 hover:translate-x-1">
                   <svg
                     className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
                     fill="none"
@@ -217,8 +209,8 @@ const Financial = () => {
             </div>
 
             {/* Service 3 */}
-            <div className="bg-white p-8 rounded-lg shadow-lg">
-              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-4">
+            <div className="bg-white p-8 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-4 transition-colors duration-300 hover:bg-blue-200">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 text-blue-600"
@@ -242,7 +234,7 @@ const Financial = () => {
                 financial efficiency.
               </p>
               <ul className="mb-4 text-gray-600 space-y-2">
-                <li className="flex items-start">
+                <li className="flex items-start transition-all duration-200 hover:translate-x-1">
                   <svg
                     className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
                     fill="none"
@@ -258,7 +250,7 @@ const Financial = () => {
                   </svg>
                   Tax-efficient business structuring
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start transition-all duration-200 hover:translate-x-1">
                   <svg
                     className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
                     fill="none"
@@ -274,7 +266,7 @@ const Financial = () => {
                   </svg>
                   Compliance management
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start transition-all duration-200 hover:translate-x-1">
                   <svg
                     className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
                     fill="none"
@@ -294,8 +286,8 @@ const Financial = () => {
             </div>
 
             {/* Service 4 */}
-            <div className="bg-white p-8 rounded-lg shadow-lg">
-              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-4">
+            <div className="bg-white p-8 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-4 transition-colors duration-300 hover:bg-blue-200">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 text-blue-600"
@@ -319,7 +311,7 @@ const Financial = () => {
                 and expand.
               </p>
               <ul className="mb-4 text-gray-600 space-y-2">
-                <li className="flex items-start">
+                <li className="flex items-start transition-all duration-200 hover:translate-x-1">
                   <svg
                     className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
                     fill="none"
@@ -335,7 +327,7 @@ const Financial = () => {
                   </svg>
                   Funding strategy development
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start transition-all duration-200 hover:translate-x-1">
                   <svg
                     className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
                     fill="none"
@@ -351,7 +343,7 @@ const Financial = () => {
                   </svg>
                   Investor and lender introductions
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start transition-all duration-200 hover:translate-x-1">
                   <svg
                     className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
                     fill="none"
@@ -371,8 +363,8 @@ const Financial = () => {
             </div>
 
             {/* Service 5 */}
-            <div className="bg-white p-8 rounded-lg shadow-lg">
-              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-4">
+            <div className="bg-white p-8 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-4 transition-colors duration-300 hover:bg-blue-200">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 text-blue-600"
@@ -396,7 +388,7 @@ const Financial = () => {
                 informed business decisions.
               </p>
               <ul className="mb-4 text-gray-600 space-y-2">
-                <li className="flex items-start">
+                <li className="flex items-start transition-all duration-200 hover:translate-x-1">
                   <svg
                     className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
                     fill="none"
@@ -412,7 +404,7 @@ const Financial = () => {
                   </svg>
                   Financial statement preparation
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start transition-all duration-200 hover:translate-x-1">
                   <svg
                     className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
                     fill="none"
@@ -428,7 +420,7 @@ const Financial = () => {
                   </svg>
                   Performance metric analysis
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start transition-all duration-200 hover:translate-x-1">
                   <svg
                     className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
                     fill="none"
@@ -448,8 +440,8 @@ const Financial = () => {
             </div>
 
             {/* Service 6 */}
-            <div className="bg-white p-8 rounded-lg shadow-lg">
-              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-4">
+            <div className="bg-white p-8 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-4 transition-colors duration-300 hover:bg-blue-200">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 text-blue-600"
@@ -473,7 +465,7 @@ const Financial = () => {
                 acquisitions.
               </p>
               <ul className="mb-4 text-gray-600 space-y-2">
-                <li className="flex items-start">
+                <li className="flex items-start transition-all duration-200 hover:translate-x-1">
                   <svg
                     className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
                     fill="none"
@@ -489,7 +481,7 @@ const Financial = () => {
                   </svg>
                   Transaction advisory
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start transition-all duration-200 hover:translate-x-1">
                   <svg
                     className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
                     fill="none"
@@ -505,7 +497,7 @@ const Financial = () => {
                   </svg>
                   Due diligence
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start transition-all duration-200 hover:translate-x-1">
                   <svg
                     className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
                     fill="none"
@@ -529,19 +521,14 @@ const Financial = () => {
 
       {/* Why Choose Us */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900">
-            Why Choose AARYA ENTERPRISES
-          </h2>
-          <p className="mt-4 text-xl text-gray-600 max-w-2xl mx-auto">
-            Partner with us for unparalleled financial expertise and
-            personalized service.
-          </p>
-        </div>
+        <SectionHeader
+          title="Why Choose AARYA ENTERPRISES"
+          subtitle="Partner with us for unparalleled financial expertise and personalized service."
+        />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-white p-6 rounded-lg shadow text-center">
-            <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4">
+          <div className="bg-white p-6 rounded-lg shadow text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+            <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4 transition-colors duration-300 hover:bg-blue-200 hover:scale-110">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6 text-blue-600"
@@ -566,8 +553,8 @@ const Financial = () => {
             </p>
           </div>
 
-          <div className="bg-white p-6 rounded-lg shadow text-center">
-            <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4">
+          <div className="bg-white p-6 rounded-lg shadow text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+            <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4 transition-colors duration-300 hover:bg-blue-200 hover:scale-110">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6 text-blue-600"
@@ -592,8 +579,8 @@ const Financial = () => {
             </p>
           </div>
 
-          <div className="bg-white p-6 rounded-lg shadow text-center">
-            <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4">
+          <div className="bg-white p-6 rounded-lg shadow text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+            <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4 transition-colors duration-300 hover:bg-blue-200 hover:scale-110">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6 text-blue-600"
@@ -632,7 +619,7 @@ const Financial = () => {
           </p>
           <Link
             to="/contact"
-            className="px-8 py-4 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-100"
+            className="px-8 py-4 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-100 transition-all duration-300 hover:shadow-lg transform hover:scale-105"
           >
             Contact Our Financial Team
           </Link>

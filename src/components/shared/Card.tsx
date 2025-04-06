@@ -16,11 +16,10 @@ const Card: React.FC<CardProps> = ({
 }) => {
   return (
     <div
-      className={`bg-white p-6 rounded-lg shadow-lg ${className}`}
-      data-aos="fade-up"
+      className={`bg-white p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1 ${className}`}
     >
       {icon && (
-        <div className="h-14 w-14 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4">
+        <div className="h-14 w-14 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4 transition-colors duration-300 group-hover:bg-blue-200">
           {icon}
         </div>
       )}

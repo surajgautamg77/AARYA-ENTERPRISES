@@ -15,10 +15,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
   className = "",
 }) => {
   return (
-    <div
-      className={`mb-12 ${center ? "text-center" : ""} ${className}`}
-      data-aos="fade-up"
-    >
+    <div className={`mb-12 ${center ? "text-center" : ""} ${className}`}>
       <h2 className={`text-3xl font-bold ${THEME.text.dark}`}>{title}</h2>
       <p
         className={`mt-4 text-xl ${THEME.text.muted} ${

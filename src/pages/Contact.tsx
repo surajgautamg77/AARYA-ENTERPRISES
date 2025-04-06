@@ -57,7 +57,7 @@ const Contact = () => {
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Info */}
-          <div data-aos="fade-up">
+          <div>
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Get in Touch
             </h2>
@@ -189,7 +189,7 @@ const Contact = () => {
                     href="https://facebook.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-500 hover:text-blue-600"
+                    className="text-gray-500 hover:text-blue-600 transition-colors duration-300 transform hover:scale-110"
                     aria-label="Facebook"
                   >
                     <svg
@@ -210,7 +210,7 @@ const Contact = () => {
                     href="https://twitter.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-500 hover:text-blue-600"
+                    className="text-gray-500 hover:text-blue-600 transition-colors duration-300 transform hover:scale-110"
                     aria-label="Twitter"
                   >
                     <svg
@@ -227,7 +227,7 @@ const Contact = () => {
                     href="https://linkedin.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-500 hover:text-blue-600"
+                    className="text-gray-500 hover:text-blue-600 transition-colors duration-300 transform hover:scale-110"
                     aria-label="LinkedIn"
                   >
                     <svg
@@ -244,7 +244,7 @@ const Contact = () => {
                     href="https://instagram.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-500 hover:text-blue-600"
+                    className="text-gray-500 hover:text-blue-600 transition-colors duration-300 transform hover:scale-110"
                     aria-label="Instagram"
                   >
                     <svg
@@ -266,8 +266,11 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div data-aos="fade-up">
-            <div className="bg-white p-8 rounded-lg shadow" id="contact-form">
+          <div>
+            <div
+              className="bg-white p-8 rounded-lg shadow transition-all duration-300 hover:shadow-lg"
+              id="contact-form"
+            >
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
                 Send a Message
               </h3>
@@ -316,7 +319,7 @@ const Contact = () => {
                         value={formData.firstName}
                         onChange={handleInputChange}
                         required
-                        className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                        className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md transition-all duration-300 hover:border-blue-400"
                       />
                     </div>
 
@@ -334,7 +337,7 @@ const Contact = () => {
                         value={formData.lastName}
                         onChange={handleInputChange}
                         required
-                        className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                        className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md transition-all duration-300 hover:border-blue-400"
                       />
                     </div>
                   </div>
@@ -353,7 +356,7 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                      className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md transition-all duration-300 hover:border-blue-400"
                     />
                   </div>
 
@@ -370,7 +373,7 @@ const Contact = () => {
                       id="phone"
                       value={formData.phone}
                       onChange={handleInputChange}
-                      className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                      className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md transition-all duration-300 hover:border-blue-400"
                     />
                   </div>
 
@@ -388,7 +391,7 @@ const Contact = () => {
                       value={formData.subject}
                       onChange={handleInputChange}
                       required
-                      className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                      className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md transition-all duration-300 hover:border-blue-400"
                     />
                   </div>
 
@@ -406,14 +409,14 @@ const Contact = () => {
                       value={formData.message}
                       onChange={handleInputChange}
                       required
-                      className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                      className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md transition-all duration-300 hover:border-blue-400"
                     ></textarea>
                   </div>
 
                   <div>
                     <button
                       type="submit"
-                      className="w-full inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                      className="w-full inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all duration-300 hover:shadow-lg transform hover:scale-[1.02]"
                     >
                       Send Message
                     </button>
@@ -426,9 +429,9 @@ const Contact = () => {
       </section>
 
       {/* Map */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8" data-aos="fade-up">
+      <section className="py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="bg-white rounded-lg shadow overflow-hidden">
+          <div className="bg-white rounded-lg shadow overflow-hidden transition-all duration-300 hover:shadow-xl">
             <h2 className="sr-only">Our Location</h2>
             <div className="h-96">
               <iframe
@@ -452,8 +455,8 @@ const Contact = () => {
             subtitle="Find answers to common questions about our services"
           />
 
-          <div className="grid gap-6 md:grid-cols-2" data-aos="fade-up">
-            <div className="bg-white p-6 rounded-lg shadow">
+          <div className="grid gap-6 md:grid-cols-2">
+            <div className="bg-white p-6 rounded-lg shadow transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">
                 What types of online services do you provide?
               </h3>
@@ -465,7 +468,7 @@ const Contact = () => {
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow">
+            <div className="bg-white p-6 rounded-lg shadow transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">
                 How can I get a business loan through your services?
               </h3>
@@ -477,7 +480,7 @@ const Contact = () => {
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow">
+            <div className="bg-white p-6 rounded-lg shadow transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">
                 Do you provide entrepreneurship opportunities?
               </h3>
@@ -489,7 +492,7 @@ const Contact = () => {
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow">
+            <div className="bg-white p-6 rounded-lg shadow transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">
                 How long does it take to get documents processed?
               </h3>

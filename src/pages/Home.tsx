@@ -43,7 +43,7 @@ const Home = () => {
             <div className="flex flex-wrap gap-4 mb-6">
               <Link
                 to="/services"
-                className="px-6 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-100"
+                className="px-6 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-100 transition-all duration-300 hover:shadow-lg transform hover:scale-105"
               >
                 Our Services
               </Link>
@@ -51,7 +51,7 @@ const Home = () => {
                 href="https://wa.me/918149113151?text=Hello"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 flex items-center"
+                className="px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 transition-all duration-300 hover:shadow-lg transform hover:scale-105 flex items-center"
               >
                 <svg
                   className="w-5 h-5 mr-2"
@@ -68,12 +68,12 @@ const Home = () => {
 
           <div className="lg:w-1/2 mt-10 lg:mt-0 space-y-6">
             {/* Current Offers Card */}
-            <div className="bg-white rounded-lg shadow-md p-4 text-gray-800">
+            <div className="bg-white rounded-lg shadow-md p-4 text-gray-800 transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1">
               <h3 className="text-lg font-bold text-blue-600 mb-2">
                 Current Offers
               </h3>
               <ul className="space-y-2">
-                <li className="flex items-start">
+                <li className="flex items-start transition-transform duration-200 hover:translate-x-1">
                   <svg
                     className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0"
                     fill="none"
@@ -91,7 +91,7 @@ const Home = () => {
                     50% off on GST Registration for first-time entrepreneurs
                   </span>
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start transition-transform duration-200 hover:translate-x-1">
                   <svg
                     className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0"
                     fill="none"
@@ -109,7 +109,7 @@ const Home = () => {
                     Free consultation for all financial advisory services
                   </span>
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start transition-transform duration-200 hover:translate-x-1">
                   <svg
                     className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0"
                     fill="none"
@@ -132,10 +132,10 @@ const Home = () => {
             </div>
 
             {/* Latest News */}
-            <div className="bg-blue-800 rounded-lg shadow-md p-4">
+            <div className="bg-blue-800 rounded-lg shadow-md p-4 transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1">
               <h3 className="text-lg font-bold text-white mb-2">Latest News</h3>
               <div className="space-y-3">
-                <div className="flex items-start sm:items-center">
+                <div className="flex items-start sm:items-center transition-transform duration-200 hover:translate-x-1">
                   <span className="text-xs font-semibold bg-blue-100 text-blue-800 px-2 py-1 rounded flex-shrink-0">
                     May 15, 2023
                   </span>
@@ -143,7 +143,7 @@ const Home = () => {
                     AARYA ENTERPRISES expands services to Nallasopara West area
                   </p>
                 </div>
-                <div className="flex items-start sm:items-center">
+                <div className="flex items-start sm:items-center transition-transform duration-200 hover:translate-x-1">
                   <span className="text-xs font-semibold bg-blue-100 text-blue-800 px-2 py-1 rounded flex-shrink-0">
                     Apr 28, 2023
                   </span>
@@ -152,7 +152,7 @@ const Home = () => {
                     entrepreneurs
                   </p>
                 </div>
-                <div className="flex items-start sm:items-center">
+                <div className="flex items-start sm:items-center transition-transform duration-200 hover:translate-x-1">
                   <span className="text-xs font-semibold bg-blue-100 text-blue-800 px-2 py-1 rounded flex-shrink-0">
                     Apr 10, 2023
                   </span>
@@ -182,11 +182,11 @@ const Home = () => {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {/* Service 1 */}
           <div
-            className="bg-white shadow-lg rounded-lg overflow-hidden"
+            className="bg-white shadow-lg rounded-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
             data-aos="fade-up"
           >
             <div className="p-6">
-              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-4">
+              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-4 transition-colors duration-300 hover:bg-blue-200">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 text-blue-600"
@@ -210,7 +210,7 @@ const Home = () => {
                 individuals and businesses.
               </p>
               <ul className="mb-4 text-gray-600 space-y-2">
-                <li className="flex items-start">
+                <li className="flex items-start transition-transform duration-200 hover:translate-x-1">
                   <svg
                     className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
                     fill="none"
@@ -226,7 +226,7 @@ const Home = () => {
                   </svg>
                   <span>Aadhar card & Pan card</span>
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start transition-transform duration-200 hover:translate-x-1">
                   <svg
                     className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
                     fill="none"
@@ -242,7 +242,7 @@ const Home = () => {
                   </svg>
                   <span>Passport & Voting Card</span>
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start transition-transform duration-200 hover:translate-x-1">
                   <svg
                     className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
                     fill="none"
@@ -256,21 +256,34 @@ const Home = () => {
                       d="M5 13l4 4L19 7"
                     ></path>
                   </svg>
-                  <span>Bank Accounts</span>
+                  <span>Business Licenses & Registrations</span>
                 </li>
               </ul>
               <Link
                 to="/services"
-                className="text-blue-600 hover:text-blue-800 font-medium"
+                className="mt-4 inline-flex items-center font-medium text-blue-600 hover:text-blue-500 transition-all duration-300 transform hover:translate-x-1"
               >
-                Learn more →
+                Learn more
+                <svg
+                  className="ml-1 h-5 w-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                    clipRule="evenodd"
+                  />
+                </svg>
               </Link>
             </div>
           </div>
 
           {/* Service 2 */}
           <div
-            className="bg-white shadow-lg rounded-lg overflow-hidden"
+            className="bg-white shadow-lg rounded-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
             data-aos="fade-up"
           >
             <div className="p-6">
@@ -358,7 +371,7 @@ const Home = () => {
 
           {/* Service 3 */}
           <div
-            className="bg-white shadow-lg rounded-lg overflow-hidden"
+            className="bg-white shadow-lg rounded-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
             data-aos="fade-up"
           >
             <div className="p-6">
@@ -458,84 +471,226 @@ const Home = () => {
       {/* Testimonials */}
       <section className="bg-gray-100 py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-extrabold text-gray-900 text-center mb-12">
-            What Our Clients Say
-          </h2>
+          <div className="text-center mb-12" data-aos="fade-up">
+            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+              What Our Customers Say
+            </h2>
+            <p className="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+              Hear from some of the satisfied clients who have used our
+              services.
+            </p>
+          </div>
 
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div
+            className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
+            data-aos="fade-up"
+          >
             {/* Testimonial 1 */}
-            <div className="bg-white p-6 rounded-lg shadow">
+            <div className="bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
               <div className="flex items-center mb-4">
-                <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center">
-                  <span className="text-blue-600 font-bold text-xl">R</span>
+                <div className="h-12 w-12 rounded-full overflow-hidden mr-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80"
+                    alt="Customer"
+                    className="h-full w-full object-cover transform transition-transform duration-500 hover:scale-110"
+                  />
                 </div>
-                <div className="ml-4">
-                  <h4 className="text-lg font-semibold">Rahul Mehta</h4>
-                  <p className="text-gray-600">CEO, TechStart Inc.</p>
+                <div>
+                  <h4 className="text-lg font-semibold text-gray-900">
+                    Rahul Sharma
+                  </h4>
+                  <p className="text-gray-600 text-sm">Small Business Owner</p>
                 </div>
               </div>
-              <p className="text-gray-600">
-                "AARYA ENTERPRISES helped us streamline our operations and
-                increase our productivity by 40%. Their strategic advice was
-                invaluable."
+              <p className="text-gray-600 italic">
+                "AARYA ENTERPRISES made my GST registration process so smooth
+                and hassle-free. Their professional approach and guidance at
+                every step were commendable. Highly recommended!"
               </p>
+              <div className="mt-4 flex items-center">
+                <div className="flex text-yellow-400">
+                  <svg className="h-5 w-5 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                  </svg>
+                  <svg className="h-5 w-5 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                  </svg>
+                  <svg className="h-5 w-5 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                  </svg>
+                  <svg className="h-5 w-5 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                  </svg>
+                  <svg className="h-5 w-5 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                  </svg>
+                </div>
+              </div>
             </div>
 
             {/* Testimonial 2 */}
-            <div className="bg-white p-6 rounded-lg shadow">
+            <div className="bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
               <div className="flex items-center mb-4">
-                <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center">
-                  <span className="text-blue-600 font-bold text-xl">P</span>
+                <div className="h-12 w-12 rounded-full overflow-hidden mr-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80"
+                    alt="Customer"
+                    className="h-full w-full object-cover transform transition-transform duration-500 hover:scale-110"
+                  />
                 </div>
-                <div className="ml-4">
-                  <h4 className="text-lg font-semibold">Priya Sharma</h4>
-                  <p className="text-gray-600">Founder, Green Solutions</p>
+                <div>
+                  <h4 className="text-lg font-semibold text-gray-900">
+                    Priya Patel
+                  </h4>
+                  <p className="text-gray-600 text-sm">Entrepreneur</p>
                 </div>
               </div>
-              <p className="text-gray-600">
-                "The financial services team at AARYA ENTERPRISES helped us
-                secure funding for our expansion. Their expertise and network
-                made all the difference."
+              <p className="text-gray-600 italic">
+                "I was struggling to get a business loan until I approached
+                AARYA ENTERPRISES. Their expert advice and assistance throughout
+                the process helped me secure the funding I needed. Great
+                service!"
               </p>
+              <div className="mt-4 flex items-center">
+                <div className="flex text-yellow-400">
+                  <svg className="h-5 w-5 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                  </svg>
+                  <svg className="h-5 w-5 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                  </svg>
+                  <svg className="h-5 w-5 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                  </svg>
+                  <svg className="h-5 w-5 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                  </svg>
+                  <svg className="h-5 w-5 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                  </svg>
+                </div>
+              </div>
             </div>
 
             {/* Testimonial 3 */}
-            <div className="bg-white p-6 rounded-lg shadow">
+            <div className="bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
               <div className="flex items-center mb-4">
-                <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center">
-                  <span className="text-blue-600 font-bold text-xl">A</span>
+                <div className="h-12 w-12 rounded-full overflow-hidden mr-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80"
+                    alt="Customer"
+                    className="h-full w-full object-cover transform transition-transform duration-500 hover:scale-110"
+                  />
                 </div>
-                <div className="ml-4">
-                  <h4 className="text-lg font-semibold">Arun Patel</h4>
-                  <p className="text-gray-600">Director, Retail Chain Ltd.</p>
+                <div>
+                  <h4 className="text-lg font-semibold text-gray-900">
+                    Vikram Singh
+                  </h4>
+                  <p className="text-gray-600 text-sm">Shop Owner</p>
                 </div>
               </div>
-              <p className="text-gray-600">
-                "Working with AARYA ENTERPRISES has been transformative for our
-                business. Their holistic approach to business development
-                yielded amazing results."
+              <p className="text-gray-600 italic">
+                "The team at AARYA ENTERPRISES is very professional and prompt.
+                They helped me get all the necessary business licenses for my
+                shop in record time. Their thorough knowledge of the processes
+                saved me a lot of time."
               </p>
+              <div className="mt-4 flex items-center">
+                <div className="flex text-yellow-400">
+                  <svg className="h-5 w-5 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                  </svg>
+                  <svg className="h-5 w-5 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                  </svg>
+                  <svg className="h-5 w-5 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                  </svg>
+                  <svg className="h-5 w-5 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                  </svg>
+                  <svg className="h-5 w-5 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                  </svg>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-blue-600 text-white py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl font-extrabold mb-6">
-            Ready to grow your business?
+      {/* Stats Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div className="text-center mb-12" data-aos="fade-up">
+          <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+            Our Impact in Numbers
           </h2>
-          <p className="text-xl max-w-xl mx-auto mb-8">
-            Contact us today to learn how we can help your business reach its
-            full potential.
+          <p className="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+            We've been helping individuals and businesses succeed since 2015.
           </p>
-          <Link
-            to="/contact"
-            className="px-8 py-4 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-100"
+        </div>
+
+        <div
+          className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4"
+          data-aos="fade-up"
+        >
+          <div className="bg-white p-6 rounded-lg shadow-md text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+            <div className="text-4xl font-extrabold text-blue-600 mb-2">
+              5000+
+            </div>
+            <div className="text-gray-600">Documentation Services</div>
+          </div>
+
+          <div className="bg-white p-6 rounded-lg shadow-md text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+            <div className="text-4xl font-extrabold text-blue-600 mb-2">
+              1200+
+            </div>
+            <div className="text-gray-600">Business Registrations</div>
+          </div>
+
+          <div className="bg-white p-6 rounded-lg shadow-md text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+            <div className="text-4xl font-extrabold text-blue-600 mb-2">
+              3500+
+            </div>
+            <div className="text-gray-600">Satisfied Clients</div>
+          </div>
+
+          <div className="bg-white p-6 rounded-lg shadow-md text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+            <div className="text-4xl font-extrabold text-blue-600 mb-2">
+              800+
+            </div>
+            <div className="text-gray-600">Financial Consultations</div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="bg-blue-600 py-16 px-4 sm:px-6 lg:px-8 text-center text-white">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl font-extrabold mb-6" data-aos="fade-up">
+            Ready to get started with AARYA ENTERPRISES?
+          </h2>
+          <p className="text-xl mb-8" data-aos="fade-up">
+            Contact us today to learn more about our services and how we can
+            help you with your documentation and financial needs.
+          </p>
+          <div
+            className="flex flex-wrap justify-center gap-4"
+            data-aos="fade-up"
           >
-            Get in Touch
-          </Link>
+            <Link
+              to="/contact"
+              className="px-8 py-4 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-100 transition-all duration-300 hover:shadow-lg transform hover:scale-105"
+            >
+              Contact Us
+            </Link>
+            <Link
+              to="/services"
+              className="px-8 py-4 border border-white text-base font-medium rounded-md text-white hover:bg-blue-700 transition-all duration-300 hover:shadow-lg transform hover:scale-105"
+            >
+              View Services
+            </Link>
+          </div>
         </div>
       </section>
     </div>

@@ -1,36 +1,27 @@
 import { Link } from "react-router-dom";
+import PageHeader from "../components/shared/PageHeader";
+import SectionHeader from "../components/shared/SectionHeader";
 
 const Services = () => {
   return (
     <div>
       {/* Header */}
-      <div className="bg-blue-600 py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto text-center" data-aos="fade-up">
-          <h1 className="text-4xl font-extrabold text-white sm:text-5xl">
-            Our Services
-          </h1>
-          <p className="mt-4 text-xl text-blue-100 max-w-2xl mx-auto">
-            Comprehensive solutions tailored to your needs.
-          </p>
-        </div>
-      </div>
+      <PageHeader
+        title="Our Services"
+        subtitle="Comprehensive solutions tailored to your needs."
+      />
 
       {/* Services Overview */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="text-center mb-16" data-aos="fade-up">
-          <h2 className="text-3xl font-bold text-gray-900">
-            Professional Online Services
-          </h2>
-          <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
-            AARYA ENTERPRISES offers a wide range of online services and
-            financial solutions to help individuals and businesses thrive.
-          </p>
-        </div>
+        <SectionHeader
+          title="Professional Online Services"
+          subtitle="AARYA ENTERPRISES offers a wide range of online services and financial solutions to help individuals and businesses thrive."
+        />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Service 1 */}
-          <div className="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up">
-            <div className="h-14 w-14 rounded-full bg-blue-100 flex items-center justify-center mb-4">
+          <div className="bg-white p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+            <div className="h-14 w-14 rounded-full bg-blue-100 flex items-center justify-center mb-4 transition-colors duration-300 hover:bg-blue-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-8 w-8 text-blue-600"
@@ -55,12 +46,12 @@ const Services = () => {
             </p>
             <Link
               to="/services/government-id"
-              className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center"
+              className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center transition-all duration-300 transform hover:translate-x-1"
             >
               Learn more
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 ml-1"
+                className="h-5 w-5 ml-1 transition-transform duration-300"
                 viewBox="0 0 20 20"
                 fill="currentColor"
               >
@@ -74,8 +65,8 @@ const Services = () => {
           </div>
 
           {/* Service 2 */}
-          <div className="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up">
-            <div className="h-14 w-14 rounded-full bg-blue-100 flex items-center justify-center mb-4">
+          <div className="bg-white p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+            <div className="h-14 w-14 rounded-full bg-blue-100 flex items-center justify-center mb-4 transition-colors duration-300 hover:bg-blue-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-8 w-8 text-blue-600"
@@ -101,12 +92,12 @@ const Services = () => {
             </p>
             <Link
               to="/services/business-registration"
-              className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center"
+              className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center transition-all duration-300 transform hover:translate-x-1"
             >
               Learn more
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 ml-1"
+                className="h-5 w-5 ml-1 transition-transform duration-300"
                 viewBox="0 0 20 20"
                 fill="currentColor"
               >
@@ -120,8 +111,8 @@ const Services = () => {
           </div>
 
           {/* Service 3 */}
-          <div className="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up">
-            <div className="h-14 w-14 rounded-full bg-blue-100 flex items-center justify-center mb-4">
+          <div className="bg-white p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+            <div className="h-14 w-14 rounded-full bg-blue-100 flex items-center justify-center mb-4 transition-colors duration-300 hover:bg-blue-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-8 w-8 text-blue-600"
@@ -147,12 +138,12 @@ const Services = () => {
             </p>
             <Link
               to="/services/financial"
-              className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center"
+              className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center transition-all duration-300 transform hover:translate-x-1"
             >
               Learn more
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 ml-1"
+                className="h-5 w-5 ml-1 transition-transform duration-300"
                 viewBox="0 0 20 20"
                 fill="currentColor"
               >
@@ -166,8 +157,8 @@ const Services = () => {
           </div>
 
           {/* Service 4 */}
-          <div className="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up">
-            <div className="h-14 w-14 rounded-full bg-blue-100 flex items-center justify-center mb-4">
+          <div className="bg-white p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+            <div className="h-14 w-14 rounded-full bg-blue-100 flex items-center justify-center mb-4 transition-colors duration-300 hover:bg-blue-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-8 w-8 text-blue-600"
@@ -192,12 +183,12 @@ const Services = () => {
             </p>
             <Link
               to="/services/tax"
-              className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center"
+              className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center transition-all duration-300 transform hover:translate-x-1"
             >
               Learn more
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 ml-1"
+                className="h-5 w-5 ml-1 transition-transform duration-300"
                 viewBox="0 0 20 20"
                 fill="currentColor"
               >
@@ -211,8 +202,8 @@ const Services = () => {
           </div>
 
           {/* Service 5 */}
-          <div className="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up">
-            <div className="h-14 w-14 rounded-full bg-blue-100 flex items-center justify-center mb-4">
+          <div className="bg-white p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+            <div className="h-14 w-14 rounded-full bg-blue-100 flex items-center justify-center mb-4 transition-colors duration-300 hover:bg-blue-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-8 w-8 text-blue-600"
@@ -237,12 +228,12 @@ const Services = () => {
             </p>
             <Link
               to="/services/banking"
-              className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center"
+              className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center transition-all duration-300 transform hover:translate-x-1"
             >
               Learn more
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 ml-1"
+                className="h-5 w-5 ml-1 transition-transform duration-300"
                 viewBox="0 0 20 20"
                 fill="currentColor"
               >
@@ -256,8 +247,8 @@ const Services = () => {
           </div>
 
           {/* Service 6 */}
-          <div className="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up">
-            <div className="h-14 w-14 rounded-full bg-blue-100 flex items-center justify-center mb-4">
+          <div className="bg-white p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+            <div className="h-14 w-14 rounded-full bg-blue-100 flex items-center justify-center mb-4 transition-colors duration-300 hover:bg-blue-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-8 w-8 text-blue-600"
@@ -283,12 +274,12 @@ const Services = () => {
             </p>
             <Link
               to="/services/ngo-trust"
-              className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center"
+              className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center transition-all duration-300 transform hover:translate-x-1"
             >
               Learn more
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 ml-1"
+                className="h-5 w-5 ml-1 transition-transform duration-300"
                 viewBox="0 0 20 20"
                 fill="currentColor"
               >
@@ -301,28 +292,29 @@ const Services = () => {
             </Link>
           </div>
         </div>
+
+        <div className="text-center mt-12">
+          <Link
+            to="/contact"
+            className="px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-all duration-300 hover:shadow-lg transform hover:scale-105"
+          >
+            Contact Us for Details
+          </Link>
+        </div>
       </section>
 
       {/* Our Process */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-100">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16" data-aos="fade-up">
-            <h2 className="text-3xl font-bold text-gray-900">
-              Our Simple Process
-            </h2>
-            <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
-              We make getting your services done as simple and hassle-free as
-              possible.
-            </p>
-          </div>
+          <SectionHeader
+            title="Our Simple Process"
+            subtitle="We make getting your services done as simple and hassle-free as possible."
+          />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Step 1 */}
-            <div
-              className="bg-white p-6 rounded-lg shadow-lg text-center"
-              data-aos="fade-up"
-            >
-              <div className="h-16 w-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+            <div className="bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-2 text-center">
+              <div className="h-16 w-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 transition-all duration-300 hover:bg-blue-700 hover:scale-110">
                 1
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -335,11 +327,8 @@ const Services = () => {
             </div>
 
             {/* Step 2 */}
-            <div
-              className="bg-white p-6 rounded-lg shadow-lg text-center"
-              data-aos="fade-up"
-            >
-              <div className="h-16 w-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+            <div className="bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-2 text-center">
+              <div className="h-16 w-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 transition-all duration-300 hover:bg-blue-700 hover:scale-110">
                 2
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -352,11 +341,8 @@ const Services = () => {
             </div>
 
             {/* Step 3 */}
-            <div
-              className="bg-white p-6 rounded-lg shadow-lg text-center"
-              data-aos="fade-up"
-            >
-              <div className="h-16 w-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+            <div className="bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-2 text-center">
+              <div className="h-16 w-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 transition-all duration-300 hover:bg-blue-700 hover:scale-110">
                 3
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -369,11 +355,8 @@ const Services = () => {
             </div>
 
             {/* Step 4 */}
-            <div
-              className="bg-white p-6 rounded-lg shadow-lg text-center"
-              data-aos="fade-up"
-            >
-              <div className="h-16 w-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+            <div className="bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-2 text-center">
+              <div className="h-16 w-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 transition-all duration-300 hover:bg-blue-700 hover:scale-110">
                 4
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -390,11 +373,8 @@ const Services = () => {
 
       {/* CTA */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto bg-blue-600 rounded-lg shadow-xl overflow-hidden">
-          <div
-            className="px-6 py-12 md:p-12 text-center text-white"
-            data-aos="fade-up"
-          >
+        <div className="max-w-7xl mx-auto bg-blue-600 rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300">
+          <div className="px-6 py-12 md:p-12 text-center text-white">
             <h2 className="text-3xl font-extrabold mb-6">
               Ready to get started?
             </h2>
@@ -404,7 +384,7 @@ const Services = () => {
             </p>
             <Link
               to="/contact"
-              className="inline-block px-8 py-4 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-100"
+              className="inline-block px-8 py-4 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-100 transition-all duration-300 hover:shadow-lg transform hover:scale-105"
             >
               Contact Us Now
             </Link>

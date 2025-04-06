@@ -20,17 +20,14 @@ const CTASection: React.FC<CTASectionProps> = ({
   return (
     <section className={`py-12 px-4 sm:px-6 lg:px-8 ${className}`}>
       <div
-        className={`max-w-7xl mx-auto ${THEME.background.primary} rounded-lg shadow-xl overflow-hidden`}
+        className={`max-w-7xl mx-auto ${THEME.background.primary} rounded-lg shadow-xl overflow-hidden transition-transform duration-300 hover:shadow-2xl`}
       >
-        <div
-          className="px-6 py-12 md:p-12 text-center text-white"
-          data-aos="fade-up"
-        >
+        <div className="px-6 py-12 md:p-12 text-center text-white">
           <h2 className="text-3xl font-extrabold mb-6">{title}</h2>
           <p className="text-xl max-w-xl mx-auto mb-8">{description}</p>
           <Link
             to={buttonLink}
-            className={`inline-block px-8 py-4 border border-transparent text-base font-medium rounded-md ${THEME.text.primary} bg-white hover:bg-gray-100`}
+            className={`inline-block px-8 py-4 border border-transparent text-base font-medium rounded-md ${THEME.text.primary} bg-white hover:bg-gray-100 transition-all duration-300 hover:shadow-lg hover:scale-105 transform`}
           >
             {buttonText}
           </Link>
