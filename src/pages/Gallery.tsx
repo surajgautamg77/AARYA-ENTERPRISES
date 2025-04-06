@@ -1,6 +1,5 @@
 import { useState } from "react";
 import PageHeader from "../components/shared/PageHeader";
-import SectionHeader from "../components/shared/SectionHeader";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
