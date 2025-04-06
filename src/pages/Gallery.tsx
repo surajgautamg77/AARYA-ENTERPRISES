@@ -1,4 +1,6 @@
 import { useState } from "react";
+import PageHeader from "../components/shared/PageHeader";
+import SectionHeader from "../components/shared/SectionHeader";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -117,22 +119,18 @@ const Gallery = () => {
   return (
     <div>
       {/* Header */}
-      <div className="bg-blue-600 py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-4xl font-extrabold text-white sm:text-5xl">
-            Our Gallery
-          </h1>
-          <p className="mt-4 text-xl text-blue-100 max-w-2xl mx-auto">
-            Take a visual journey through our offices, team, and client
-            engagements.
-          </p>
-        </div>
-      </div>
+      <PageHeader
+        title="Our Gallery"
+        subtitle="Take a visual journey through our offices, team, and client engagements."
+      />
 
       {/* Gallery Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         {/* Filter Buttons */}
-        <div className="flex flex-wrap justify-center gap-2 mb-12">
+        <div
+          className="flex flex-wrap justify-center gap-2 mb-12"
+          data-aos="fade-up"
+        >
           <button
             onClick={() => setFilter("all")}
             className={`px-4 py-2 rounded-md ${
@@ -192,6 +190,7 @@ const Gallery = () => {
               key={image.id}
               className="overflow-hidden rounded-lg shadow-lg cursor-pointer transition-transform duration-300 hover:scale-105"
               onClick={() => openModal(image.src)}
+              data-aos="fade-up"
             >
               <img
                 src={image.src}
@@ -247,17 +246,12 @@ const Gallery = () => {
 
       {/* Quote Section */}
       <section className="bg-gray-100 py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto text-center">
+        <div className="max-w-7xl mx-auto text-center" data-aos="fade-up">
           <blockquote className="text-2xl font-medium text-gray-900 italic">
             "A picture is worth a thousand words. Our gallery showcases our
-            commitment to creating a positive work environment and delivering
-            exceptional service to our clients."
+            journey, our people, and our commitment to excellence."
           </blockquote>
-          <div className="mt-6">
-            <cite className="text-lg font-semibold text-gray-700">
-              - Pradeep Kumar, Founder
-            </cite>
-          </div>
+          <p className="mt-4 text-lg text-gray-600">— Pradeep Kumar, Founder</p>
         </div>
       </section>
     </div>

@@ -1,4 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Layout from "./components/Layout/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -10,6 +13,16 @@ import Contact from "./pages/Contact";
 import "./App.css";
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease",
+      once: true,
+      mirror: false,
+      disable: "mobile",
+    });
+  }, []);
+
   return (
     <Router>
       <Layout>

@@ -5,701 +5,383 @@ const Services = () => {
     <div>
       {/* Header */}
       <div className="bg-blue-600 py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto text-center">
+        <div className="max-w-7xl mx-auto text-center" data-aos="fade-up">
           <h1 className="text-4xl font-extrabold text-white sm:text-5xl">
             Our Services
           </h1>
           <p className="mt-4 text-xl text-blue-100 max-w-2xl mx-auto">
-            Comprehensive online and financial solutions to help you and your
-            business.
+            Comprehensive solutions tailored to your needs.
           </p>
         </div>
       </div>
 
       {/* Services Overview */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900">How We Can Help</h2>
-          <p className="mt-4 text-xl text-gray-600 max-w-2xl mx-auto">
-            At AARYA ENTERPRISES, we offer a wide range of online services and
-            financial solutions.
+        <div className="text-center mb-16" data-aos="fade-up">
+          <h2 className="text-3xl font-bold text-gray-900">
+            Professional Online Services
+          </h2>
+          <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
+            AARYA ENTERPRISES offers a wide range of online services and
+            financial solutions to help individuals and businesses thrive.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Service 1 */}
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
-            <div className="p-6">
-              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-blue-600"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">
-                Online Services
-              </h3>
-              <p className="text-gray-600 mb-6">
-                We provide a complete range of government and documentation
-                services to help individuals and businesses.
-              </p>
-              <ul className="mb-6 text-gray-600 space-y-2">
-                <li className="flex items-start">
-                  <svg
-                    className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5 13l4 4L19 7"
-                    ></path>
-                  </svg>
-                  Aadhar card & Pan card
-                </li>
-                <li className="flex items-start">
-                  <svg
-                    className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5 13l4 4L19 7"
-                    ></path>
-                  </svg>
-                  Passport & Voting Card
-                </li>
-                <li className="flex items-start">
-                  <svg
-                    className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5 13l4 4L19 7"
-                    ></path>
-                  </svg>
-                  Bank Accounts
-                </li>
-                <li className="flex items-start">
-                  <svg
-                    className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5 13l4 4L19 7"
-                    ></path>
-                  </svg>
-                  Driving License
-                </li>
-              </ul>
-              <div className="mt-auto">
-                <Link
-                  to="/contact"
-                  className="text-blue-600 hover:text-blue-800 font-medium"
-                >
-                  Learn more →
-                </Link>
-              </div>
+          <div className="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up">
+            <div className="h-14 w-14 rounded-full bg-blue-100 flex items-center justify-center mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-8 w-8 text-blue-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"
+                />
+              </svg>
             </div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">
+              Government ID Services
+            </h3>
+            <p className="text-gray-600 mb-4">
+              We assist in processing Aadhar cards, PAN cards, Voter IDs,
+              Passport applications, and more with ease and efficiency.
+            </p>
+            <Link
+              to="/services/government-id"
+              className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center"
+            >
+              Learn more
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5 ml-1"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </Link>
           </div>
 
           {/* Service 2 */}
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
-            <div className="p-6">
-              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-blue-600"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">
-                Financial Services
-              </h3>
-              <p className="text-gray-600 mb-6">
-                Comprehensive financial solutions from national banks, NBFCs,
-                and financial institutions.
-              </p>
-              <ul className="mb-6 text-gray-600 space-y-2">
-                <li className="flex items-start">
-                  <svg
-                    className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5 13l4 4L19 7"
-                    ></path>
-                  </svg>
-                  Personal loan advisory
-                </li>
-                <li className="flex items-start">
-                  <svg
-                    className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5 13l4 4L19 7"
-                    ></path>
-                  </svg>
-                  Gold loan advisory
-                </li>
-                <li className="flex items-start">
-                  <svg
-                    className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5 13l4 4L19 7"
-                    ></path>
-                  </svg>
-                  Investment opportunities
-                </li>
-                <li className="flex items-start">
-                  <svg
-                    className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5 13l4 4L19 7"
-                    ></path>
-                  </svg>
-                  Daily savings plans
-                </li>
-              </ul>
-              <div className="mt-auto">
-                <Link
-                  to="/financial"
-                  className="text-blue-600 hover:text-blue-800 font-medium"
-                >
-                  Learn more →
-                </Link>
-              </div>
+          <div className="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up">
+            <div className="h-14 w-14 rounded-full bg-blue-100 flex items-center justify-center mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-8 w-8 text-blue-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                />
+              </svg>
             </div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">
+              Business Registration
+            </h3>
+            <p className="text-gray-600 mb-4">
+              Complete solutions for business registration including Shop
+              Establishment, Food License, GST Registration, Company
+              Registration, and more.
+            </p>
+            <Link
+              to="/services/business-registration"
+              className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center"
+            >
+              Learn more
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5 ml-1"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </Link>
           </div>
 
           {/* Service 3 */}
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
-            <div className="p-6">
-              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-blue-600"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">
-                Business Registration Services
-              </h3>
-              <p className="text-gray-600 mb-6">
-                Complete business registration and documentation services to
-                formalize your business.
-              </p>
-              <ul className="mb-6 text-gray-600 space-y-2">
-                <li className="flex items-start">
-                  <svg
-                    className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5 13l4 4L19 7"
-                    ></path>
-                  </svg>
-                  Shop Establishment License
-                </li>
-                <li className="flex items-start">
-                  <svg
-                    className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5 13l4 4L19 7"
-                    ></path>
-                  </svg>
-                  GST Registration
-                </li>
-                <li className="flex items-start">
-                  <svg
-                    className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5 13l4 4L19 7"
-                    ></path>
-                  </svg>
-                  Income Tax & TDS Filing
-                </li>
-                <li className="flex items-start">
-                  <svg
-                    className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5 13l4 4L19 7"
-                    ></path>
-                  </svg>
-                  Company Registration (Proprietorship/Partnership/LLP/Pvt. Ltd)
-                </li>
-              </ul>
-              <div className="mt-auto">
-                <Link
-                  to="/contact"
-                  className="text-blue-600 hover:text-blue-800 font-medium"
-                >
-                  Learn more →
-                </Link>
-              </div>
+          <div className="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up">
+            <div className="h-14 w-14 rounded-full bg-blue-100 flex items-center justify-center mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-8 w-8 text-blue-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
             </div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">
+              Financial Services
+            </h3>
+            <p className="text-gray-600 mb-4">
+              Comprehensive financial services including Personal Loans, Gold
+              Loans, Investment Advisory, and Insurance services from trusted
+              institutions.
+            </p>
+            <Link
+              to="/services/financial"
+              className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center"
+            >
+              Learn more
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5 ml-1"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </Link>
           </div>
 
           {/* Service 4 */}
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
-            <div className="p-6">
-              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-blue-600"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">
-                Insurance Services
-              </h3>
-              <p className="text-gray-600 mb-6">
-                Complete insurance solutions for individuals and businesses.
-              </p>
-              <ul className="mb-6 text-gray-600 space-y-2">
-                <li className="flex items-start">
-                  <svg
-                    className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5 13l4 4L19 7"
-                    ></path>
-                  </svg>
-                  Life Insurance
-                </li>
-                <li className="flex items-start">
-                  <svg
-                    className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5 13l4 4L19 7"
-                    ></path>
-                  </svg>
-                  Health Insurance
-                </li>
-                <li className="flex items-start">
-                  <svg
-                    className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5 13l4 4L19 7"
-                    ></path>
-                  </svg>
-                  General Insurance
-                </li>
-                <li className="flex items-start">
-                  <svg
-                    className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5 13l4 4L19 7"
-                    ></path>
-                  </svg>
-                  Business Insurance
-                </li>
-              </ul>
-              <div className="mt-auto">
-                <Link
-                  to="/contact"
-                  className="text-blue-600 hover:text-blue-800 font-medium"
-                >
-                  Learn more →
-                </Link>
-              </div>
+          <div className="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up">
+            <div className="h-14 w-14 rounded-full bg-blue-100 flex items-center justify-center mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-8 w-8 text-blue-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
+                />
+              </svg>
             </div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">
+              Tax Services
+            </h3>
+            <p className="text-gray-600 mb-4">
+              Professional assistance with Income Tax Filing, TDS Refund Filing,
+              GST compliance, and other tax-related matters.
+            </p>
+            <Link
+              to="/services/tax"
+              className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center"
+            >
+              Learn more
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5 ml-1"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </Link>
           </div>
 
           {/* Service 5 */}
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
-            <div className="p-6">
-              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-blue-600"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">
-                Banking & Financial Services
-              </h3>
-              <p className="text-gray-600 mb-6">
-                Comprehensive banking and financial transaction services.
-              </p>
-              <ul className="mb-6 text-gray-600 space-y-2">
-                <li className="flex items-start">
-                  <svg
-                    className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5 13l4 4L19 7"
-                    ></path>
-                  </svg>
-                  Money Transfer
-                </li>
-                <li className="flex items-start">
-                  <svg
-                    className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5 13l4 4L19 7"
-                    ></path>
-                  </svg>
-                  Cash Withdrawal by Aadhar
-                </li>
-                <li className="flex items-start">
-                  <svg
-                    className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5 13l4 4L19 7"
-                    ></path>
-                  </svg>
-                  E-PF Services
-                </li>
-                <li className="flex items-start">
-                  <svg
-                    className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5 13l4 4L19 7"
-                    ></path>
-                  </svg>
-                  Government Scheme Advisory
-                </li>
-              </ul>
-              <div className="mt-auto">
-                <Link
-                  to="/contact"
-                  className="text-blue-600 hover:text-blue-800 font-medium"
-                >
-                  Learn more →
-                </Link>
-              </div>
+          <div className="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up">
+            <div className="h-14 w-14 rounded-full bg-blue-100 flex items-center justify-center mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-8 w-8 text-blue-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"
+                />
+              </svg>
             </div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">
+              Banking & Money Transfer
+            </h3>
+            <p className="text-gray-600 mb-4">
+              Services include Bank Account Opening, Money Transfer, Cash
+              Withdrawal via Aadhaar, and E-PF services with quick processing.
+            </p>
+            <Link
+              to="/services/banking"
+              className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center"
+            >
+              Learn more
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5 ml-1"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </Link>
           </div>
 
           {/* Service 6 */}
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
-            <div className="p-6">
-              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-blue-600"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">
-                Business Opportunity
-              </h3>
-              <p className="text-gray-600 mb-6">
-                We provide business opportunities and entrepreneurship support
-                particularly for housewives and educated unemployed individuals.
-              </p>
-              <ul className="mb-6 text-gray-600 space-y-2">
-                <li className="flex items-start">
-                  <svg
-                    className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5 13l4 4L19 7"
-                    ></path>
-                  </svg>
-                  Business ideas and vocational education
-                </li>
-                <li className="flex items-start">
-                  <svg
-                    className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5 13l4 4L19 7"
-                    ></path>
-                  </svg>
-                  Financing support
-                </li>
-                <li className="flex items-start">
-                  <svg
-                    className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5 13l4 4L19 7"
-                    ></path>
-                  </svg>
-                  Entrepreneurship guidance
-                </li>
-                <li className="flex items-start">
-                  <svg
-                    className="h-5 w-5 text-blue-500 mr-2 mt-0.5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5 13l4 4L19 7"
-                    ></path>
-                  </svg>
-                  Business training
-                </li>
-              </ul>
-              <div className="mt-auto">
-                <Link
-                  to="/contact"
-                  className="text-blue-600 hover:text-blue-800 font-medium"
-                >
-                  Learn more →
-                </Link>
-              </div>
+          <div className="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up">
+            <div className="h-14 w-14 rounded-full bg-blue-100 flex items-center justify-center mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-8 w-8 text-blue-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
+              </svg>
             </div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">
+              NGO & Trust Registration
+            </h3>
+            <p className="text-gray-600 mb-4">
+              Complete services for Society Registration, Trust/NGO
+              Registration, and compliance management with personalized
+              guidance.
+            </p>
+            <Link
+              to="/services/ngo-trust"
+              className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center"
+            >
+              Learn more
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5 ml-1"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Process Section */}
-      <section className="bg-gray-100 py-16 px-4 sm:px-6 lg:px-8">
+      {/* Our Process */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-100">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900">Our Approach</h2>
-            <p className="mt-4 text-xl text-gray-600 max-w-2xl mx-auto">
-              We follow a proven methodology to deliver exceptional results for
-              our clients.
+          <div className="text-center mb-16" data-aos="fade-up">
+            <h2 className="text-3xl font-bold text-gray-900">
+              Our Simple Process
+            </h2>
+            <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
+              We make getting your services done as simple and hassle-free as
+              possible.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="h-16 w-16 rounded-full bg-blue-600 text-white flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Step 1 */}
+            <div
+              className="bg-white p-6 rounded-lg shadow-lg text-center"
+              data-aos="fade-up"
+            >
+              <div className="h-16 w-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 1
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Discover</h3>
-              <p className="text-gray-600">
-                We start by understanding your business, objectives, challenges,
-                and opportunities.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="h-16 w-16 rounded-full bg-blue-600 text-white flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
-                2
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Analyze</h3>
-              <p className="text-gray-600">
-                Our experts analyze your situation and develop tailored
-                strategies for your specific needs.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="h-16 w-16 rounded-full bg-blue-600 text-white flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
-                3
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">
-                Implement
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                Consultation
               </h3>
               <p className="text-gray-600">
-                We work with you to implement the strategies effectively across
-                your organization.
+                Contact us for a free consultation to understand your specific
+                needs and requirements.
               </p>
             </div>
 
-            <div className="text-center">
-              <div className="h-16 w-16 rounded-full bg-blue-600 text-white flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+            {/* Step 2 */}
+            <div
+              className="bg-white p-6 rounded-lg shadow-lg text-center"
+              data-aos="fade-up"
+            >
+              <div className="h-16 w-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                2
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                Documentation
+              </h3>
+              <p className="text-gray-600">
+                We'll guide you through the required documentation process with
+                clear instructions.
+              </p>
+            </div>
+
+            {/* Step 3 */}
+            <div
+              className="bg-white p-6 rounded-lg shadow-lg text-center"
+              data-aos="fade-up"
+            >
+              <div className="h-16 w-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                3
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                Processing
+              </h3>
+              <p className="text-gray-600">
+                Our team processes your application with relevant authorities
+                and handles all follow-ups.
+              </p>
+            </div>
+
+            {/* Step 4 */}
+            <div
+              className="bg-white p-6 rounded-lg shadow-lg text-center"
+              data-aos="fade-up"
+            >
+              <div className="h-16 w-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 4
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Optimize</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                Delivery
+              </h3>
               <p className="text-gray-600">
-                We continuously monitor results, make adjustments, and optimize
-                for long-term success.
+                We deliver the completed service directly to you and provide any
+                necessary guidance for next steps.
               </p>
             </div>
           </div>
@@ -707,21 +389,26 @@ const Services = () => {
       </section>
 
       {/* CTA */}
-      <section className="bg-blue-600 text-white py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl font-extrabold mb-6">
-            Ready to transform your business?
-          </h2>
-          <p className="text-xl max-w-xl mx-auto mb-8">
-            Contact us today to discuss how our services can help your business
-            reach its full potential.
-          </p>
-          <Link
-            to="/contact"
-            className="px-8 py-4 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-100"
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto bg-blue-600 rounded-lg shadow-xl overflow-hidden">
+          <div
+            className="px-6 py-12 md:p-12 text-center text-white"
+            data-aos="fade-up"
           >
-            Get in Touch
-          </Link>
+            <h2 className="text-3xl font-extrabold mb-6">
+              Ready to get started?
+            </h2>
+            <p className="text-xl max-w-xl mx-auto mb-8">
+              Contact us today to discuss your requirements and how we can help
+              you with our professional services.
+            </p>
+            <Link
+              to="/contact"
+              className="inline-block px-8 py-4 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-100"
+            >
+              Contact Us Now
+            </Link>
+          </div>
         </div>
       </section>
     </div>

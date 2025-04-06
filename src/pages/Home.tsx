@@ -6,7 +6,7 @@ const Home = () => {
       {/* Hero Section */}
       <section className="bg-blue-600 text-white">
         {/* Announcement Banner */}
-        <div className="bg-blue-800 py-2 px-4">
+        <div className="bg-blue-800 py-2 px-4" data-aos="fade-up">
           <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-start sm:items-center sm:justify-between space-y-2 sm:space-y-0">
             <div className="flex items-center space-x-2">
               <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-500">
@@ -30,7 +30,7 @@ const Home = () => {
         </div>
 
         <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-start">
-          <div className="lg:w-1/2 lg:pr-12">
+          <div className="lg:w-1/2 lg:pr-12" data-aos="fade-up">
             <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl mb-6">
               Welcome to AARYA ENTERPRISES
             </h1>
@@ -169,7 +169,7 @@ const Home = () => {
 
       {/* Services Overview */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12" data-aos="fade-up">
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
             Our Services
           </h2>
@@ -181,7 +181,10 @@ const Home = () => {
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {/* Service 1 */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+          <div
+            className="bg-white shadow-lg rounded-lg overflow-hidden"
+            data-aos="fade-up"
+          >
             <div className="p-6">
               <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-4">
                 <svg
@@ -266,7 +269,10 @@ const Home = () => {
           </div>
 
           {/* Service 2 */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+          <div
+            className="bg-white shadow-lg rounded-lg overflow-hidden"
+            data-aos="fade-up"
+          >
             <div className="p-6">
               <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-4">
                 <svg
@@ -351,7 +357,10 @@ const Home = () => {
           </div>
 
           {/* Service 3 */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+          <div
+            className="bg-white shadow-lg rounded-lg overflow-hidden"
+            data-aos="fade-up"
+          >
             <div className="p-6">
               <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-4">
                 <svg
@@ -436,7 +445,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-12" data-aos="fade-up">
           <Link
             to="/services"
             className="px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
