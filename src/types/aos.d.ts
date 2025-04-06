@@ -10,6 +10,7 @@ declare module "aos" {
     throttleDelay?: number;
     debounceDelay?: number;
     disableMutationObserver?: boolean;
+    mirror?: boolean;
   }
 
   interface AOS {

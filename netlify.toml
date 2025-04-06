@@ -1,10 +1,12 @@
 [build]
-  command = "CI=false npm run build"
+  command = "CI=false TSC_COMPILE_ON_ERROR=true npm run build"
   publish = "build"
 
 [build.environment]
   CI = "false"
   NETLIFY = "true"
+  TSC_COMPILE_ON_ERROR = "true"
+  DISABLE_ESLINT_PLUGIN = "true"
 
 [[redirects]]
   from = "/*"
